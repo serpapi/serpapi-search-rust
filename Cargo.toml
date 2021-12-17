@@ -1,0 +1,32 @@
+[package]
+name = "serpapi-search-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Get Google, Bing, Baidu, Ebay, Yahoo, Yandex, Home depot, Naver, Apple, youtube Ssearch Results via SerpApi.com"
+readme = "README.md"
+homepage = "https://serpapi.com"
+documentation = "https://serpapi.com/integration"
+repository = "https://github.com/serpapi/serpapi-search-rust"
+license = "MIT"
+authors = ["Victor Benarbia <victor@serpapi.com>"]
+keywords = ["serp", "serpapi", "google", "search", "results", "json", "api", "Bing", "Baidu", "Ebay", "Yahoo", "Yandex", "Home depot", "Naver", "Apple"]
+# TODO find correct categories?
+categories = ["network-programming", "api"]
+
+include = [
+  "Cargo.toml",
+  "LICENSE",
+  "src/**/*",
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# json parser
+#serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+# http client
+tokio = { version = "1", features = ["full"] }
+# rest API
+reqwest = "0.11.7"
+error-chain = "0.12.4"
