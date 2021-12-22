@@ -21,6 +21,12 @@ static HOMEDEPOT_ENGINE: &'static str = "home_depot";
 static APPLE_STORE_ENGINE: &'static str = "apple_app_store";
 static NAVER_ENGINE: &'static str = "naver";
 
+// model serp api search
+//  because of Rust designed we propose to create a new search everytime
+//   as opose of modifying the same search object over and over.
+//  I noticed thar updating a HashMap is difficult in Rust. (I know).
+//  I guess it's cheaper to create a new object in the stack
+//   than updating a mutable object in the heap.
 pub struct SerpApiSearch {
     // search engine like: google, youtube, bing...
     pub engine: String,
@@ -181,5 +187,30 @@ impl SerpApiSearch {
     pub async fn html(&self) -> Result<String, Box<dyn std::error::Error>> {
         let body = self.getResults("/html").await?;
         Ok(body)
+    }
+
+    // Get location using Location API
+    pub async fn location(&self) -> Result<serde_json::Value, Box<dyn std::error::Error>> {
+        let results = self.getJson("/locations.json").await?;
+        Ok(results)
+    }
+
+    // Retrieve search result from the Search Archive API
+    pub async fn search_archive(
+        &self,
+        search_id: &str,
+    ) -> Result<serde_json::Value, Box<dyn std::error::Error>> {
+        let mut endpoint = "/searches/".to_string();
+        endpoint.push_str(search_id);
+        endpoint.push_str(".json");
+        println!(">> {}", endpoint);
+        let results = self.getJson(&endpoint).await?;
+        Ok(results)
+    }
+
+    // Get account information using Account API
+    pub async fn account(&self) -> Result<serde_json::Value, Box<dyn std::error::Error>> {
+        let results = self.getJson("/account").await?;
+        Ok(results)
     }
 }
