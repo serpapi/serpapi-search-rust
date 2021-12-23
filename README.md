@@ -4,8 +4,6 @@ This Rust package enables to scrape and parse search results from Google, Bing, 
 SerpApi.com enables to do localized search, leverage advanced search engine features and a lot more...
 A completed documentation is available at [SerpApi](https://serpapi.com).
 
-This is work in progress...
-
 To install in your rust application, update Cargo.toml
 ```sh
 serpapi-search-rust="0.1.0"
@@ -95,9 +93,12 @@ cargo test
 
 For more information how to build a paramaters HashMap see [serpapi.com documentation](https://serpapi.com/search-api)
 
+### Technical features
+- Dynamic JSON decoding using Serde JSON
+- Asyncronous HTTP request handle method using tokio and reqwest
+- Async tests using Tokio
 
-Feature
-- Asyncronous method using tokio
-- Async test
-- dynamic JSON decoding using serde
-- 
+### TODO
+ - [ ] more test to close code coverage (each search engine)
+ - [ ] add more examples
+ - [ ] better documentation
