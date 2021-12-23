@@ -9,9 +9,9 @@ documentation = "https://serpapi.com/integration"
 repository = "https://github.com/serpapi/serpapi-search-rust"
 license = "MIT"
 authors = ["Victor Benarbia <victor@serpapi.com>"]
-keywords = ["serp", "serpapi", "google", "search", "results", "json", "api", "Bing", "Baidu", "Ebay", "Yahoo", "Yandex", "Home depot", "Naver", "Apple"]
+keywords = ["serp", "serpapi", "google", "search", "results", "json", "api", "Bing", "Baidu", "Ebay", "Yahoo", "Yandex", "Home_Depot", "Naver", "Apple", "engine", "scrape"]
 # TODO find correct categories?
-categories = ["network-programming", "api"]
+categories = ["network-programming", "api", "scrape", "serp", "search"]
 
 include = [
   "Cargo.toml",
