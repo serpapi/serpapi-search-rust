@@ -64,8 +64,7 @@ async fn location() {
 
 #[tokio::test]
 async fn get_account() {
-    let mut params = HashMap::<String, String>::new();
-    params.insert("q".to_string(), "Austin".to_string());
+    let params = HashMap::<String, String>::new();
     let search = SerpApiSearch::google(params, api_key());
     let account = search.account().await.expect("request");
     assert_eq!(account["api_key"], api_key());
@@ -84,7 +83,7 @@ async fn search_archive() {
     // initialize the search engine
     let search = SerpApiSearch::google(params, api_key());
     let initial_results = search.json().await.expect("request");
-    let  mut id = initial_results["search_metadata"]["id"].to_string();
+    let mut id = initial_results["search_metadata"]["id"].to_string();
     // remove extra quote " from string convertion
     id = id.replace("\"", "");
 
