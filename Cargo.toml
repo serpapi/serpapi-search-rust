@@ -1,11 +1,11 @@
 [package]
 name = "serpapi-search-rust"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Get Google, Bing, Baidu, Ebay, Yahoo, Yandex, Home depot, Naver, Apple, youtube Ssearch Results via SerpApi.com"
 readme = "README.md"
 homepage = "https://serpapi.com"
-documentation = "https://serpapi.com/integration"
+documentation = "https://serpapi.com/search-api"
 repository = "https://github.com/serpapi/serpapi-search-rust"
 license = "MIT"
 authors = ["Victor Benarbia <victor@serpapi.com>"]
