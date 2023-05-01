@@ -7,7 +7,7 @@
 <div align="center">
 
   <a href="https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml">![CI](https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml/badge.svg)</a>
-  <a href="">![Crates.io](https://img.shields.io/crates/d/serpapi-search-rust)</a>
+  ![Crates.io](https://img.shields.io/crates/d/serpapi-search-rust)
   <a href="https://crates.io/crates/serpapi-search-rust">![serpapi-search-rust](https://img.shields.io/crates/v/serpapi-search-rust.svg)</a>
 
 </div>
