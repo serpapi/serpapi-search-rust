@@ -1,7 +1,7 @@
 <h1 align="center">SerpApi Search in Rust</h1>
 
 <div align="center">
-   <img src="https://user-images.githubusercontent.com/78694043/233931752-9d2110a4-fc47-4e6e-addb-c8fe785243f0.svg" width="600" alt="serpapi-search-rust-logo">
+   <img src="https://user-images.githubusercontent.com/78694043/235420241-a286d0fa-b87b-4737-899f-996719fa4956.png" width="600" alt="serpapi-search-rust-logo">
 </div>
 
 <div align="center">
