@@ -1,10 +1,20 @@
-# SerpApi Search in Rust
-[![CI](https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml/badge.svg)](https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml) [![serpapi-search-rust](https://img.shields.io/crates/v/serpapi-search-rust.svg)](https://crates.io/crates/serpapi-search-rust)
+<h1 align="center">SerpApi Search in Rust</h1>
 
+<div align="center">
+   <img src="https://user-images.githubusercontent.com/78694043/235420241-a286d0fa-b87b-4737-899f-996719fa4956.png" width="600" alt="serpapi-search-rust-logo">
+</div>
+
+<div align="center">
+
+  <a href="https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml">![CI](https://github.com/serpapi/serpapi-search-rust/actions/workflows/ci.yml/badge.svg)</a>
+  ![Crates.io](https://img.shields.io/crates/d/serpapi-search-rust)
+  <a href="https://crates.io/crates/serpapi-search-rust">![serpapi-search-rust](https://img.shields.io/crates/v/serpapi-search-rust.svg)</a>
+
+</div>
 
 This Rust package enables to scrape and parse search results from Google, Bing, Baidu, Yandex, Yahoo, Ebay, Apple, Youtube, Naver, Home depot and more. It's powered by [SerpApi](https://serpapi.com) which delivered a consistent JSON format accross search engines.
-SerpApi.com enables to do localized search, leverage advanced search engine features and a lot more...
-A completed documentation is available at [SerpApi](https://serpapi.com).
+
+SerpApi.com enables to do localized search, leverage advanced search engine features and a lot more. A completed documentation is available at [SerpApi](https://serpapi.com).
 
 To install in your rust application, update Cargo.toml
 ```sh
